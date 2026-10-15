@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Lesson 4</title>
-    <meta charset="UTF-8"/>
-
-    <script src="src/index.js" type="module"></script>
+  <meta charset="UTF-8" />
+  <title>MiniMaple</title>
 </head>
-
 <body>
-<h1>Implement the symbolic diff here</h1>
-<div id="container">
+  <h1>MiniMaple</h1>
 
-</div>
-<div>
-    <button id="demoButton">
-        Add something
-    </button>
-</div>
+  <label for="input_text">Выражение:</label>
+  <input id="input_text" type="text" value="4*x^3 - x^2" size="40">
+
+  <br><br>
+
+  <label for="input_var">Переменная:</label>
+  <input id="input_var" type="text" value="x" size="10">
+
+  <br><br>
+
+  <button id="diffButton">Продифференцировать</button>
+  <button id="clearButton">Очистить</button>
+
+  <p>Результат:</p>
+  <div id="result">—</div>
+
+  <p id="error"></p>
+
+  <div id="container"></div>
+
+  
+  <script type="module" src="./src/index.js"></script>
 </body>
 </html>
